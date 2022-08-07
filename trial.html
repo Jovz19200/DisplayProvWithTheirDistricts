@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration form</title>
+
+
+</head>
+
+
+<body>
+<h1>Registration form</h1>
+<form>
+<table>
+    <tr>
+        <td>
+            Gmail :
+        </td>
+        <td>
+            <input type="email" placeholder="your gmail" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password :
+        </td>
+        <td>
+            <input type="password" placeholder="create a Password" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender :
+        </td>
+        <td>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email :
+        </td>
+        <td>
+            <input type="mail" placeholder="create an email" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Contact :
+        </td>
+        <td>
+            <select required>
+                <option>243 DRC</option>
+                <option>249 SUDAN</option>
+                <option>250 Rwanda</option>
+                <option>254 KENYA</option>
+                <option>255 TANZANIA</option>
+                <option>256 UGANDA</option>
+                <option>257 BURUNDI</option>
+            </select>
+            <td>
+                <input type="contact" placeholder="25078****" required>
+            </td>
+        </td>
+    </tr>
+    <tr>
+        <td>Location:</td>
+        <td>
+          <select id="select_1"  onchange = "assignDistrict()"required>
+            <option>choose Province</option>
+            <option value="Kigali">Kigali City</option>
+            <option value="West">Western Province</option>
+            <option value="East">Eastern Province</option>
+            <option value="North">Northern Province</option>
+            <option value="South">Southern Province</option>
+          </select>
+        </td>
+        
+        <td>
+          <select id="select_2" required>
+           <option>Choose District</option>
+           <option>Gasabo</option>
+           <option>Kicukiro</option>
+           <option>Nyarugenge</option>
+           <option>Rusizi</option>
+           <option>Nyamasheke</option>
+           <option>Rutsiro</option>
+           <option>Karongi</option>
+           <option>Rubavu</option>
+           <option>Nyabihu</option>
+           <option>Ngororero</option>
+           <option>Rwamagana</option>
+           <option>Bugesera</option>
+           <option>Ngoma</option>
+           <option>Kirehe</option>
+           <option>Kayonza</option>
+           <option>Gatsibo</option>
+           <option>Ngagatare</option>
+           <option>Rulindo</option>
+           <option>Musanze</option> 
+           <option>Gakenke</option>
+           <option>Burera</option>
+           <option>Gicumbi</option>
+           <option>Kamonyi</option>
+           <option>Muhanga</option>
+           <option>Ruhango</option>
+           <option>Nyanza</option>
+           <option>Huye</option>
+           <option>Gisagara</option>
+           <option>Nyamagabe</option>
+           <option>Nyaruguru</option>           
+                
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" placeholder="submit" required>
+        </td>
+    </tr>
+</table>
+
+</form>
+
+
+  <script src="trial.js"></script>
+</body>
+
+</html>
