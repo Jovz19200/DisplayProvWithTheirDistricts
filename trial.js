@@ -80,7 +80,7 @@ let displayCode = () => {
  let n1 = document.getElementById("n1");
  let n2 = document.getElementById("n2");
  
- /*var validate = () => {
+ var validate = () => {
     if (n1.value != "" && n1.value != ""){
     if (n1.value == n2.value){
         return true;
@@ -88,7 +88,7 @@ let displayCode = () => {
     alert("Your Password did not match");
      return false;
      
- }*/
+ }
  let mail = document.getElementById("mail");
  let email = mail.value;
  function validate(email){
