@@ -5,20 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Registration form</title>
 
-
 </head>
 
 
 <body>
 <h1>Registration form</h1>
-<form>
+<form onsubmit="validate(email)" >
 <table>
     <tr>
         <td>
             Gmail :
         </td>
         <td>
-            <input type="email" placeholder="your gmail" required>
+            <input id="mail" type="email" placeholder="Enter Your gmail" required>
         </td>
     </tr>
     <tr>
@@ -26,7 +25,15 @@
             Password :
         </td>
         <td>
-            <input type="password" placeholder="create a Password" required>
+            <input type="password" id="n1" placeholder="Create a Password" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Confirm Password :
+        </td>
+        <td>
+            <input type="password" id="n2" placeholder="Re-enter the Password" required>
         </td>
     </tr>
     <tr>
@@ -40,10 +47,10 @@
     </tr>
     <tr>
         <td>
-            Email :
+            Username :
         </td>
         <td>
-            <input type="mail" placeholder="create an email" required>
+            <input type="mail" placeholder="create a username" required>
         </td>
     </tr>
     <tr>
@@ -51,17 +58,23 @@
             Contact :
         </td>
         <td>
-            <select required>
-                <option>243 DRC</option>
-                <option>249 SUDAN</option>
-                <option>250 Rwanda</option>
-                <option>254 KENYA</option>
-                <option>255 TANZANIA</option>
-                <option>256 UGANDA</option>
-                <option>257 BURUNDI</option>
+            <select id= "countries" onchange="displayCode()" required>
+                <option>Choose Country</option>
+                <option value="drc">DRC</option>
+                <option value="sudan">SUDAN</option>
+                <option value="rwanda">RWANDA</option>
+                <option value="kenya">KENYA</option>
+                <option value="tanzania">TANZANIA</option>
+                <option value="uganda">UGANDA</option>
+                <option value="burundi">BURUNDI</option>
             </select>
             <td>
-                <input type="contact" placeholder="25078****" required>
+                <select id="chooseCode">
+                    <option>Code</option>
+                </select>
+            </td>
+            <td>
+                <input type="contact" placeholder="Phone Number" required>
             </td>
         </td>
     </tr>
